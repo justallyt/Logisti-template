@@ -1,0 +1,120 @@
+.about-description-wrapper{
+     padding: 100px 0;
+}
+.about-description-wrapper .description-wrapper-container{
+     display: grid;
+     grid-template-columns: 35% 1fr 1fr;
+     gap: 50px;
+}
+.main-descript{
+    display: flex;
+    align-items: center;
+}
+.main-descript h2{
+    font-size: 35px;
+    font-family: "Gordita Medium";
+    font-weight: 500;
+}
+.description-col p,
+.more-description p{
+    font-size: 17px;
+    line-height: 30px;
+    color: rgb(100,100,100);
+    margin-bottom: 10px;
+}
+
+.more-description{
+     margin: 40px 0 0px;
+}
+
+.more-description h2{
+    font-size: 50px;
+    font-family: "Gordita Bold";
+    margin-bottom: 20px;
+}
+
+.more-description-container{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     margin-top: 50px;
+     gap: 40px;
+}
+.more-description-container .image-side,
+.more-description .image-side img{
+      height: 600px;
+      object-fit: cover;
+      border-radius: 10px;
+}
+
+.statements-container{
+    display: flex;
+    flex-direction: column;
+}
+.statements-container h2{
+    font-size: 30px;
+    margin: 20px 0;
+    word-spacing: 5px;
+}
+.value-box .value{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.value span{
+    font-size: 30px;
+    display: inline-flex;
+    color: var(--main-color);
+}
+.value h4{
+    font-size: 20px;
+}
+.value p{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+.team-wrapper{
+    background: linear-gradient(rgb(252,252,252),transparent, transparent), url("../assets/team.jpg") no-repeat;
+    background-size: cover;
+    background-position: -60%;
+    padding: 0px 0px 100px 0px;
+    height: 750px;
+}
+
+.team-wrapper-content h1{
+     font-size: 50px;
+     font-family: "Gordita Bold";
+     text-align: center;     
+}
+.team-wrapper-content p{
+      text-align: center;
+      width: 600px;
+      margin: 10px auto;
+      font-size: 18px;
+      line-height: 30px;
+      color: rgb(100,100,100);
+}
+
+
+
+@media(max-width: 1000px){
+      .about-description-wrapper .description-wrapper-container{
+           grid-template-columns: repeat(1,1fr);
+           gap: 10px;
+      }
+      .team-wrapper{
+            background-position: bottom;
+      }
+}
+@media(max-width: 768px){
+      .more-description h2{
+        font-size: 35px;
+      }
+      .more-description-container{
+          grid-template-columns: repeat(1,1fr);
+      }
+      .team-wrapper-content p{
+          width: 100%;
+      }
+}

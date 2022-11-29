@@ -1,0 +1,267 @@
+.navbar-container{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      color: white;
+}
+.topbar-section{
+     border-bottom: 1px solid rgba(234, 234, 234, 0.3);
+}
+.topbar-content{
+      display: flex;
+      justify-content: space-between;;
+}
+.social-links ul,
+.other-details,
+.phone,
+.email,
+.hours{
+      display: flex;
+      align-items: center;
+}
+
+.social-links ul li{
+     border-left: 1px solid rgba(234, 234, 234, 0.3);;
+     width: 50px;
+     height: 45px;
+}
+.social-links ul li:last-child{
+      border-right: 1px solid rgba(234, 234, 234, 0.3);
+}
+.social-links ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    color: white;
+}
+
+.other-details h2{
+     font-size: 13px;
+     font-family: "Gordita Light";      
+     font-weight: 600;
+}
+
+.other-details .phone,
+.other-details .hours,
+.other-details .email{
+      padding: 0 20px;
+      border-left: 1px solid rgba(234, 234, 234, 0.3);
+      gap: 10px;
+      line-height: 45px;
+}
+.other-details .hours{
+    border-right: 1px solid rgba(234, 234, 234, 0.3);
+}
+
+.header-scrolled{
+       position: fixed;
+       width: 100%;
+       top: 0;
+       z-index: 199;
+       background: #fff;
+       box-shadow: 0px 1px 2px -1px rgb(199, 199, 199);
+       transform: translateY(-100%);
+       transition: all 0.8s ease;
+}
+.header-scrolled.active{
+        transform: translateY(0);
+}
+.menu-nav{
+    height: 80px;
+}
+.menu-nav-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      position: relative;
+}
+.logo{
+      width: 150px;
+      flex-shrink: 0;
+      margin-top: 10px;
+}
+.logo img{
+      filter: brightness(0) invert(1);
+}
+.header-scrolled .logo img{
+       filter: brightness(1);
+}
+.menu-nav nav ul{
+     display: flex;
+     gap: 30px;
+}
+.menu-nav nav{
+      display: flex;
+      gap: 60px;
+      align-items: center;
+}
+.menu-nav nav ul li a{
+     color: white;
+     font-family: "Gordita Regular";
+     position: relative;
+      line-height: 40px;
+      display: flex;
+}
+.menu-nav nav ul li a::after{
+        content: "";
+        background: #fff;;
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        border-radius: 50px;
+        left: 0;
+        transition: all 0.8s ease;
+}
+.header-scrolled .menu-nav nav ul li a::after{
+      content: "";
+      background: #000;;
+      width: 0%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      border-radius: 50px;
+      left: 0;
+      transition: all 0.8s ease;
+}
+.menu-nav nav ul li a:hover::after,
+.menu-nav nav ul li a.active::after{
+        width: 100%;
+}
+.header-scrolled nav ul li a,
+.header-scrolled .menu-nav nav ul li a::after{
+       color: #222;
+}
+
+.menu-nav .quote-btn a,
+.sidebar-content .quote-btn a{
+     font-family: "Gordita Regular";
+     width: 150px;
+     height: 45px;
+     background: var(--main-color);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 14px;
+     color: white;
+     border-radius: 5px;
+}
+
+.sidebar-trigger{
+       position: absolute;
+       top: 30px;
+       right: 30px;
+       width: 35px;
+       cursor: pointer;
+       display: none;
+}
+.sidebar-trigger span{
+       width: 100%;
+       height: 3px;
+       background: white;
+       display: block;
+       margin-bottom: 7px;
+       border-radius: 30px;
+}
+.header-scrolled .sidebar-trigger span{
+       background:  #000;
+       border-radius: 30px;
+}
+
+.sidebar-section{
+       width: 600px;
+       height: 100%;
+       background: 100%;
+       position: fixed;
+       top: 0;
+       z-index: 300;
+       bottom: 0;
+       left: 0;
+       background: white;
+       transform: translateX(-100%);
+       transition: all 0.8s ease;
+       box-shadow: 1px 0px 2px -1px rgb(194, 194, 194);
+}
+.sidebar-section.active{
+       transform: translateX(0);
+}
+.sidebar-section .sidebar-inner-row{
+       width: 90%;
+       margin: auto;
+}
+.sidebar-content{
+      position: relative;
+}
+.side-logo{
+      width: 150px;
+      margin-top: 30px;
+}
+.sidebar-content .close-btn{
+       font-size: 30px;
+       cursor: pointer;
+       width: 45px;
+       height: 45px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+       right: 20px;
+       top: 5px;
+       border-radius: 50%;
+       transition: all 0.5s ease;
+       background: #ffefe7ef;
+}
+.sidebar-content .close-btn:hover{
+       background-color: #ffd9c8ef;;
+}
+
+.sidebar-content nav{
+      margin-top: 20px
+}
+.sidebar-content nav ul li{
+       line-height: 50px;
+}
+.sidebar-content nav ul li a{
+      color: #000;
+      position: relative;
+      line-height: 40px;
+      display: inline-block;
+}
+.sidebar-content nav ul li a::after{
+       content: "";
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 0;
+       height: 2px;
+       background-color: var(--main-color);
+       border-radius: 30px;
+       transition: all 0.5s ease;
+}
+.sidebar-content nav ul li a:hover::after,
+.sidebar-content nav ul li a.active::after{
+       width: 100%;
+}
+.sidebar-content .quote-btn{
+      margin-top: 20px;
+}
+
+@media(max-width: 1000px){
+      .topbar-section{
+            display: none;
+     }
+       .menu-nav nav{
+              display: none;
+       }
+       .sidebar-trigger{
+             display: block;
+       }
+}
+@media(max-width: 768px){
+      .sidebar-section{
+             width: 100%;
+      }
+}

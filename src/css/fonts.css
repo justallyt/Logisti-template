@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Gordita Bold";
+    src: url("../assets/fonts/Gordita-Bold.otf");
+}
+@font-face {
+    font-family: "Gordita Light";
+    src: url("../assets/fonts/Gordita-Light.otf");
+}
+@font-face {
+    font-family: "Gordita Regular";
+    src: url("../assets/fonts/Gordita-Regular.otf");
+}
+@font-face {
+    font-family: "Gordita Medium";
+    src: url("../assets/fonts/Gordita-Medium.otf");
+}

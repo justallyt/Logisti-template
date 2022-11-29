@@ -1,0 +1,98 @@
+.contact-wrapper{
+    padding: 100px 0;
+}
+
+.contact-intro{
+    width: 700px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+.contact-intro h3{
+    font-size: 16px;
+    color: var(--main-color);
+}
+.contact-intro h1{
+    font-family: "Gordita Bold";
+    font-size: 50px;
+}
+.contact-intro p{
+    line-height: 30px;
+    font-size: 17px;
+    color: rgb(100,100,100);
+}
+.form-section{
+     width: 800px;
+     margin: 50px auto 20px auto;
+}
+.form-row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.form-section label{
+      display: block;
+      font-size: 15px;
+      margin-bottom: 5px;
+}
+.form-row .form-control{
+    width: 100%;
+    height: 50px;
+    border: 1px solid gainsboro;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 15px;
+    font-family: "Gordita Medium";
+}
+.form-section ::placeholder{
+      font-size: 13px;
+      font-family: "Gordita Regular";
+      color: #b8b8b8
+}
+.form-section textarea{
+    width: 100%;
+    height: 150px;
+    border: 1px solid gainsboro;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 15px;
+    font-family: "Gordita Medium";
+}
+
+.form-section button{
+     width: 200px;
+     height: 50px;
+     margin: 40px auto 0 auto;
+     text-align: center;
+     display: block;
+     background: black;
+     font-family: "Gordita Regular";
+     color: white;
+     font-weight: 600;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: all 0.5s ease;
+     border: none;
+}
+.form-section button:hover{
+     background: var(--main-color);
+
+}
+.map-marker iframe{
+    border: none;
+    width: 100%;
+}
+
+@media(max-width: 1000px){
+      .form-section,
+      .contact-intro{
+           width: 100%;
+      }
+}
+@media(max-width: 480px){
+      .form-row{
+           grid-template-columns: repeat(1,1fr);
+      }
+}

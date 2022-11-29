@@ -1,0 +1,147 @@
+.service-description-wrapper{
+      padding: 100px 0 0;
+}
+.service-description-content{
+     padding-bottom: 80px;
+}
+.intro-service-text{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+}
+.intro-service-text h3{
+    font-size: 40px;
+    font-family: "Gordita Bold";
+}
+.intro-service-text p{
+      line-height: 30px;
+      font-size: 17px;
+      color: rgb(100,100,100);
+}
+
+.service-body{
+    padding: 80px 0;
+}
+.service-body-content{
+    display: grid;
+    grid-template-columns: 32% auto;
+    gap: 30px;
+}
+
+.service-navigation{
+     background: black;
+     padding: 40px;
+}
+.service-navigation ul li{
+      line-height: 50px;
+}
+.service-navigation ul li a{
+      color: white;
+      position: relative;
+      font-weight: 600;
+      line-height: 50px;
+      display: flex;
+}
+.service-navigation ul li a::after{
+     content: "";
+     width: 0%;
+     height: 2px;
+     background: var(--main-color);
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     transition: all 0.5s ease;
+}
+.service-navigation ul li a.activelink,
+.service-navigation ul li a:hover{
+    color: var(--main-color);
+}
+.service-navigation ul li a:hover::after,
+.service-navigation ul li a.activelink::after{
+      width: 100%;
+}
+
+.download-resources{
+      background: rgba(238, 238, 238, 0.712);
+      margin: 30px 0;
+      padding: 30px;
+}
+.download-resources h3{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.download-resources .download-btn{
+      padding: 15px;
+      background: var(--main-color);
+      margin-bottom: 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+}
+.download-btn span{
+     display: inline-flex;
+}
+
+.help-box{
+    background: var(--main-color);
+    color: whitesmoke;
+    padding: 30px;
+}
+.help-box h2{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.help-box p{
+     font-size: 17px;
+     line-height: 28px;
+     margin-bottom: 20px;
+}
+
+.help-box a{
+     width: 150px;
+     height: 45px;
+     background: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     margin-bottom: 20px;
+}
+
+.service-right-column h1{
+    font-family: "Gordita Bold";
+    margin-bottom: 20px;
+}
+.service-right-column p{
+    color: rgb(100, 100, 100);
+    line-height: 30px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.service-right-column .image-box-row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+@media(max-width: 900px){
+        .service-body-content{
+              grid-template-columns: repeat(1,1fr);
+        }
+        .service-right-column{
+              order: 1;
+        }
+        .service-left-column{
+             order: 2;
+        }
+}
+
+@media(max-width: 480px){
+    .service-navigation{
+         display: none;
+    }
+}
